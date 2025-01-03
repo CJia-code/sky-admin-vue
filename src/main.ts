@@ -20,6 +20,14 @@ import "default-passive-events";
 import ElementPlus from "element-plus";
 // 引入ElementPlus的css
 import "element-plus/dist/index.css";
+// 引入VxeUI
+import VxeUI from "vxe-pc-ui";
+// 引入VxeUI的css
+import "vxe-pc-ui/lib/style.css";
+// 引入VxeUITable
+import VxeUITable from "vxe-table";
+// 引入VxeUITable的css
+import "vxe-table/lib/style.css";
 // @ts-ignore忽略当前文件ts类型的检测否则有红色提示(打包会失败)
 import zhCn from "element-plus/dist/locale/zh-cn.mjs";
 // 引入ElementPlus的暗黑模式css
@@ -48,6 +56,10 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component);
 }
 
+// 注册VxeUI
+app.use(VxeUI);
+// 注册VxeUITable
+app.use(VxeUITable);
 // 注册路由
 app.use(router);
 // 注册pinia

@@ -7,7 +7,25 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    File: typeof import('./../components/SkyUpload/file.vue')['default']
+    Image: typeof import('./../components/SkyUpload/image.vue')['default']
+    Index: typeof import('./../components/SkyCard/Index.vue')['default']
+    MobileDrawer: typeof import('./../components/MobileDrawer/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SkyCard: typeof import('./../components/SkyCard/index.vue')['default']
+    SkyDialog: typeof import('./../components/SkyDialog/index.vue')['default']
+    SkyDrawer: typeof import('./../components/SkyDrawer/index.vue')['default']
+    SkyExcel: typeof import('./../components/SkyExcel/index.vue')['default']
+    SkyGlobalIcon: typeof import('./../components/SkyGlobalIcon/index.vue')['default']
+    SkyImage: typeof import('./../components/SkyImage/index.vue')['default']
+    SkyPicture: typeof import('./../components/SkyPicture/index.vue')['default']
+    SkySelectIcon: typeof import('./../components/SkySelectIcon/index.vue')['default']
+    SkyTag: typeof import('./../components/SkyTag/index.vue')['default']
+    SkyTagFilter: typeof import('./../components/SkyTagFilter/index.vue')['default']
+    SkyToolbar: typeof import('./../components/SkyToolbar/index.vue')['default']
+    SkyTree: typeof import('./../components/SkyTree/index.vue')['default']
+    SvgIcon: typeof import('./../components/SvgIcon/index.vue')['default']
+    TreeV2: typeof import('./../components/SkyTree/tree-v2.vue')['default']
   }
 }
