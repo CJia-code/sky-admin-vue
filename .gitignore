@@ -1,8 +1,8 @@
 # Logs
 logs
 *.log
-n
-yarn-debug.logpm-debug.log**
+npm-debug.log*
+yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
