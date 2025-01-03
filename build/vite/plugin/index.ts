@@ -1,7 +1,6 @@
 import type {PluginOption} from 'vite';
 import vue from '@vitejs/plugin-vue';
 import UnoCss from "unocss/vite";
-import VueDevTools from 'vite-plugin-vue-devtools';
 // keepAlive 组件name
 import vueSetupExtend from "vite-plugin-vue-setup-extend";
 // gzip压缩
